@@ -136,7 +136,8 @@ class database:
 
 airlineDB = database('airline.db')
 filesToAdd = []
-# Need to make dataFolder more general. Maybe require data directory in same directory as script.
+# Requires data directory in same directory as script.
+# Data directory has BTS CSV files split into subdirectories by year
 dataFolder = r'AirlineData'
 for directory in os.listdir(dataFolder):
     for file in os.listdir(dataFolder + '\\' + directory):
